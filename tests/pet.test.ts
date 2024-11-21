@@ -1,8 +1,7 @@
 import { PetController } from './api/controller/pet.controller';
 import {strict as assert} from 'assert'; 
 //import assert, { deepEqual } from 'assert';
-import { definitions } from '../.temp/types'
-import { operations } from '../.temp/types'
+import { definitions , operations} from '../.temp/types'
 import test from '@playwright/test';
 
 

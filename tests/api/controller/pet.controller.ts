@@ -2,10 +2,7 @@ import { URLSearchParams } from 'url';
 import { definitions, operations } from '../../../.temp/types'
 import { loadAPISpec, validate } from '../validator';
 import { JsonRequest } from 'http-req-builder';
-<<<<<<< HEAD
 import { CONFIG } from '../../../config/env';
-=======
->>>>>>> parent of 8a27497 (dotenv)
 
 export class PetController {
     async getById(id: number | string) {

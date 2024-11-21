@@ -1,9 +1,6 @@
 import { definitions, operations } from "../../../.temp/types";
 import { JsonRequest } from 'http-req-builder';
-<<<<<<< HEAD
 import { CONFIG } from "../../../config/env";
-=======
->>>>>>> parent of 8a27497 (dotenv)
 
 export class StoreController {
 
