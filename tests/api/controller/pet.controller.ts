@@ -14,7 +14,6 @@ export class PetController {
         const apiSpec = await loadAPISpec();
         // @ts-ignore
         const schema = apiSpec.paths!['/pet/{petId}']!['get']!['responses']!['200']!['schema']
-        //console.log('SCHEMA!!!!!!!', schema)      
         validate(schema, body)
         return body
     }
@@ -34,7 +33,6 @@ export class PetController {
                     .url(`http://localhost/v2/pet/`)
                     .method('POST')
                     .body(pet)
-                    //.send<operations['addPet']['responses']['200']['schema']>()
                     .send<operations['getPetById']['responses']['200']['schema']>()
             ).body
         }

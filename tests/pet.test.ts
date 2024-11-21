@@ -1,6 +1,5 @@
 import { PetController } from './api/controller/pet.controller';
 import {strict as assert} from 'assert'; 
-//import assert, { deepEqual } from 'assert';
 import { definitions , operations} from '../.temp/types'
 import test from '@playwright/test';
 
@@ -86,7 +85,7 @@ test.describe('User can', function () {
       
       //console.log('changedPet: ', changedPet)
       const updatedPet = await pet.update(changedPet)
-      console.log(updatedPet.id, "Updated pet ID")
+      //console.log(updatedPet.id, "Updated pet ID")
 
       assert.deepEqual(updatedPet, changedPet, `Updated Pet data does not match to expected`)
 
