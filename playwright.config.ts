@@ -10,8 +10,12 @@ const config: PlaywrightTestConfig = {
     forbidOnly: process.env.CI ? true : undefined,
     timeout: 2 * 60 * 1000, // 5 minutes
     globalSetup: 'utils/generate-typings.ts',
+    use: {
+        trace: 'on',
+      },
+    
     reporter: [
-        ['list'],
+        ['html'],
     ],
 };
 
